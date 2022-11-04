@@ -10,4 +10,4 @@ blocks:
       jobs:
         - name: echo
           commands:
-            - this is promotion
+            - echo "this is a promotion"
