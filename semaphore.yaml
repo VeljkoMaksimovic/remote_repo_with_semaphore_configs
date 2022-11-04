@@ -1,5 +1,5 @@
 version: v1.0
-name: Semaphore pipeline for Feedscrubber
+name: Semaphore pipeline for ${{parameters.SEMAPHORE_PROJECT_NAME}}
 agent:
   machine:
     os_image: ubuntu1804
