@@ -8,10 +8,10 @@ auto_cancel:
   running:
     when: branch != 'master'
 blocks:
-  - name: Test block
+  - name: Blocked pulled from the remote repository
     dependencies: []
     task:
       jobs:
-        - name: Test job
+        - name: Echo
           commands:
             - echo "Yaml downloaded from remote repo"
