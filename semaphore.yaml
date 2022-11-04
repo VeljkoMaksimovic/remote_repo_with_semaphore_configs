@@ -1,5 +1,5 @@
 version: v1.0
-name: 'Semaphore pipeline for ${{parameters.SEMAPHORE_PROJECT_NAME}}'
+name: 'Semaphore pipeline for ${{parameters.SEMAPHORE_GIT_WORKING_BRANCH}}'
 agent:
   machine:
     os_image: ubuntu1804
