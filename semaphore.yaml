@@ -15,3 +15,7 @@ blocks:
         - name: Echo
           commands:
             - echo $SEMAPHORE_PROJECT_NAME
+
+promotions:
+  - name: Promote
+    pipeline_file: pipeline_2.yml
