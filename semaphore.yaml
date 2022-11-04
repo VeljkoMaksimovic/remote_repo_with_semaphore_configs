@@ -1,1 +1,17 @@
-test
+version: v1.0
+name: Semaphore pipeline for Feedscrubber
+agent:
+  machine:
+    os_image: ubuntu1804
+    type: e1-standard-2
+auto_cancel:
+  running:
+    when: branch != 'master'
+blocks:
+  - name: Test block
+    dependencies: []
+    task:
+      jobs:
+        - name: Test job
+          commands:
+            - echo "Yaml downloaded from remote repo"
