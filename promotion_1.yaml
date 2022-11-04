@@ -1,5 +1,5 @@
 version: v1.0
-name: Promotion ${{parameters.PROMOTION_NAME}}
+name: Promotion 1
 agent:
   machine:
     type: e1-standard-2
