@@ -1,0 +1,13 @@
+version: v1.0
+name: Pipeline 3
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu2004
+blocks:
+  - name: Promotion block
+    task:
+      jobs:
+        - name: echo
+          commands:
+            - this is promotion
