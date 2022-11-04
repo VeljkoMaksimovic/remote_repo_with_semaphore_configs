@@ -1,5 +1,5 @@
 version: v1.0
-name: 'Semaphore pipeline for ${{parameters.SEMAPHORE_GIT_WORKING_BRANCH}}'
+name: 'Semaphore pipeline'
 agent:
   machine:
     os_image: ubuntu1804
@@ -14,4 +14,4 @@ blocks:
       jobs:
         - name: Echo
           commands:
-            - echo "Yaml downloaded from remote repo"
+            - echo $SEMAPHORE_PROJECT_NAME
