@@ -19,3 +19,10 @@ blocks:
 promotions:
   - name: Promote
     pipeline_file: pipeline_2.yml
+    parameters:
+      env_vars:
+        - required: true
+          default_value: "promotion_1"
+          description: Name of the promotion (needed for pre-flight checks)
+          name: PROMOTION_NAME
+        
